@@ -1,0 +1,12 @@
+{
+  "r2": 0.766,
+  "mae": 3.20,
+  "rmse": 4.78,
+  "high_risk_recall": 0.7796,
+  "weighted_f1": 0.8606,
+  "accuracy": 0.8548,
+  "split_type": "CDM-level (leaky - all test events exist in train)",
+  "model": "CatBoostRegressor",
+  "features": 104,
+  "note": "Original baseline before event-wise split fix. Metrics are optimistic due to event overlap in train/test split."
+}

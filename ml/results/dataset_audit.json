@@ -1,0 +1,78 @@
+{
+  "shape": {
+    "train_rows": 162634,
+    "train_cols": 103,
+    "test_rows": 24484,
+    "test_cols": 103
+  },
+  "events": {
+    "train_unique_events": 13154,
+    "test_unique_events": 2167,
+    "overlap_count": 2167,
+    "leakage_detected": true
+  },
+  "train_target_stats": {
+    "min": -30.0,
+    "max": -1.4429,
+    "mean": -19.3406,
+    "std": 10.0116
+  },
+  "test_target_stats": {
+    "min": -30.0,
+    "max": -1.533,
+    "mean": -16.5485,
+    "std": 9.8468
+  },
+  "class_distribution": {
+    "train": {
+      "Low": 0.4786,
+      "High": 0.3462,
+      "Medium": 0.1753
+    },
+    "test": {
+      "High": 0.4509,
+      "Low": 0.3584,
+      "Medium": 0.1907
+    }
+  },
+  "missing_values": {
+    "train_top10": {
+      "c_rcs_estimate": 52841,
+      "c_crdot_r": 9241,
+      "c_sigma_ndot": 9241,
+      "c_cndot_r": 9241,
+      "c_ctdot_rdot": 9241,
+      "c_ctdot_n": 9241,
+      "c_ctdot_t": 9241,
+      "c_ctdot_r": 9241,
+      "c_crdot_n": 9241,
+      "c_crdot_t": 9241
+    },
+    "test_top10": {
+      "c_rcs_estimate": 7465,
+      "AP": 1329,
+      "SSN": 1329,
+      "F3M": 1329,
+      "F10": 1329,
+      "c_cndot_r": 1223,
+      "c_crdot_n": 1223,
+      "c_ctdot_r": 1223,
+      "c_ctdot_t": 1223,
+      "c_ctdot_n": 1223
+    }
+  },
+  "duplicates": {
+    "train_duplicate_rows": 0,
+    "test_duplicate_rows": 0
+  },
+  "leakage_check": {
+    "max_risk_scaling_corr_with_risk": -0.062954,
+    "verdict": "Low direct correlation \u2014 not a simple copy of target, but temporal leakage possible"
+  },
+  "cdms_per_event": {
+    "mean": 12.36,
+    "median": 13.0,
+    "min": 1,
+    "max": 23
+  }
+}

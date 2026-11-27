@@ -1,0 +1,163 @@
+{
+  "split_type": "event_wise_80_20",
+  "train_events": 10523,
+  "test_events": 2631,
+  "train_cdms": 149853,
+  "test_cdms": 37265,
+  "overlap_check": 0,
+  "random_state": 42,
+  "models": {
+    "logistic_regression": {
+      "model": "Logistic Regression",
+      "weighted_f1": 0.1883,
+      "macro_f1": 0.1756,
+      "high_risk_recall": 1.0,
+      "high_risk_precision": 0.3575,
+      "medium_recall": 0.0,
+      "low_recall": 0.0,
+      "accuracy": 0.3575,
+      "per_class": {
+        "Low": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 17374.0
+        },
+        "Medium": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 6569.0
+        },
+        "High": {
+          "precision": 0.3574936267274923,
+          "recall": 1.0,
+          "f1-score": 0.5266965821258426,
+          "support": 13322.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          17374
+        ],
+        [
+          0,
+          0,
+          6569
+        ],
+        [
+          0,
+          0,
+          13322
+        ]
+      ]
+    },
+    "random_forest": {
+      "model": "Random Forest",
+      "weighted_f1": 0.7948,
+      "macro_f1": 0.7284,
+      "high_risk_recall": 0.9073,
+      "high_risk_precision": 0.7548,
+      "medium_recall": 0.3453,
+      "low_recall": 0.9148,
+      "accuracy": 0.8117,
+      "per_class": {
+        "Low": {
+          "precision": 0.8814264322555598,
+          "recall": 0.914757683895476,
+          "f1-score": 0.8977827990396836,
+          "support": 17374.0
+        },
+        "Medium": {
+          "precision": 0.7043478260869566,
+          "recall": 0.3452580301415741,
+          "f1-score": 0.4633772601900092,
+          "support": 6569.0
+        },
+        "High": {
+          "precision": 0.7547770700636943,
+          "recall": 0.9072962017715058,
+          "f1-score": 0.8240387237523862,
+          "support": 13322.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          15893,
+          447,
+          1034
+        ],
+        [
+          1408,
+          2268,
+          2893
+        ],
+        [
+          730,
+          505,
+          12087
+        ]
+      ]
+    },
+    "xgboost": {
+      "error": "\nXGBoost Library (libxgboost.dylib) could not be loaded.\nLikely causes:\n  * OpenMP runtime is not installed\n    - vcomp140.dll or libgomp-1.dll for Windows\n    - libomp.dylib for Mac OSX\n    - libgomp"
+    },
+    "lightgbm": {
+      "error": "dlopen(/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/lightgbm/lib/lib_lightgbm.dylib, 0x0006): Library not loaded: @rpath/libomp.dylib\n  Referenced from: <59CCDAC2-EB"
+    },
+    "catboost": {
+      "model": "CatBoost",
+      "weighted_f1": 0.8608,
+      "macro_f1": 0.8186,
+      "high_risk_recall": 0.7966,
+      "high_risk_precision": 0.933,
+      "medium_recall": 0.7721,
+      "low_recall": 0.9295,
+      "accuracy": 0.8542,
+      "per_class": {
+        "Low": {
+          "precision": 0.9478225143796221,
+          "recall": 0.9294923448831588,
+          "f1-score": 0.9385679414157851,
+          "support": 17374.0
+        },
+        "Medium": {
+          "precision": 0.5729131367897887,
+          "recall": 0.7721114324859187,
+          "f1-score": 0.6577616392167034,
+          "support": 6569.0
+        },
+        "High": {
+          "precision": 0.9330050993493934,
+          "recall": 0.7965770905269479,
+          "f1-score": 0.8594104308390023,
+          "support": 13322.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          16149,
+          1207,
+          18
+        ],
+        [
+          753,
+          5072,
+          744
+        ],
+        [
+          136,
+          2574,
+          10612
+        ]
+      ],
+      "regression": {
+        "r2": 0.8868,
+        "mae": 2.2261,
+        "rmse": 3.379
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+Model,Weighted_F1,Macro_F1,High_Risk_Recall,High_Risk_Precision,Accuracy,R2,MAE,RMSE
+Logistic Regression,0.1883,0.1756,1.0,0.3575,0.3575,N/A,N/A,N/A
+Random Forest,0.7948,0.7284,0.9073,0.7548,0.8117,N/A,N/A,N/A
+CatBoost,0.8608,0.8186,0.7966,0.933,0.8542,0.8868,2.2261,3.379

@@ -1,0 +1,9 @@
+{
+  "split_type": "event_wise_80_20",
+  "train_events": 10523,
+  "test_events": 2631,
+  "train_cdms": 149853,
+  "test_cdms": 37265,
+  "overlap_check": 0,
+  "random_state": 42
+}

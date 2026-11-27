@@ -1,0 +1,12 @@
+{
+  "split_type": "chronological",
+  "train_events": 10523,
+  "test_events": 2631,
+  "train_cdms": 172655,
+  "test_cdms": 14463,
+  "weighted_f1": 0.9968,
+  "high_risk_recall": 0.9983,
+  "r2": 0.9997,
+  "mae": 0.0726,
+  "rmse": 0.1375
+}

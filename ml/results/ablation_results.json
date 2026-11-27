@@ -1,0 +1,146 @@
+{
+  "baseline": {
+    "name": "Full feature set (baseline)",
+    "weighted_f1": 0.9965,
+    "high_risk_recall": 0.9963,
+    "r2": 0.9998,
+    "mae": 0.0623,
+    "confusion_matrix": [
+      [
+        17347,
+        27,
+        0
+      ],
+      [
+        35,
+        6514,
+        20
+      ],
+      [
+        0,
+        49,
+        13273
+      ]
+    ]
+  },
+  "no_missingness_indicators": {
+    "name": "Without missingness indicators",
+    "weighted_f1": 0.9963,
+    "high_risk_recall": 0.9961,
+    "r2": 0.9998,
+    "mae": 0.0615,
+    "confusion_matrix": [
+      [
+        17348,
+        26,
+        0
+      ],
+      [
+        31,
+        6509,
+        29
+      ],
+      [
+        0,
+        52,
+        13270
+      ]
+    ]
+  },
+  "no_max_risk_features": {
+    "name": "Without max_risk_scaling / max_risk_estimate",
+    "weighted_f1": 0.8472,
+    "high_risk_recall": 0.7789,
+    "r2": 0.8713,
+    "mae": 2.4246,
+    "confusion_matrix": [
+      [
+        15984,
+        1364,
+        26
+      ],
+      [
+        808,
+        4925,
+        836
+      ],
+      [
+        166,
+        2779,
+        10377
+      ]
+    ]
+  },
+  "all_raw_features": {
+    "name": "All raw numeric features (no selection)",
+    "weighted_f1": 0.9965,
+    "high_risk_recall": 0.9963,
+    "r2": 0.9998,
+    "mae": 0.0623,
+    "confusion_matrix": [
+      [
+        17347,
+        27,
+        0
+      ],
+      [
+        35,
+        6514,
+        20
+      ],
+      [
+        0,
+        49,
+        13273
+      ]
+    ]
+  },
+  "high_threshold_neg10": {
+    "name": "High-risk threshold at log10(Pc)=-10",
+    "weighted_f1": 0.9348,
+    "high_risk_recall": 0.8167,
+    "r2": 0.9998,
+    "mae": 0.0623,
+    "confusion_matrix": [
+      [
+        17347,
+        27,
+        0
+      ],
+      [
+        35,
+        6534,
+        0
+      ],
+      [
+        0,
+        2442,
+        10880
+      ]
+    ]
+  },
+  "high_threshold_neg15": {
+    "name": "High-risk threshold at log10(Pc)=-15",
+    "weighted_f1": 0.8667,
+    "high_risk_recall": 1.0,
+    "r2": 0.9998,
+    "mae": 0.0623,
+    "confusion_matrix": [
+      [
+        17347,
+        27,
+        0
+      ],
+      [
+        35,
+        2344,
+        4190
+      ],
+      [
+        0,
+        0,
+        13322
+      ]
+    ]
+  }
+}
